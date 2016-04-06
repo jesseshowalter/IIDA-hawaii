@@ -1,0 +1,35 @@
+// *************
+// Custom mixins
+// *************
+@mixin overlay{
+	display: block;
+	position: relative;
+	z-index: 1;
+
+	&:after{
+		background:rgba(0,0,0,.65);
+		content: "";
+		width:100%;
+		height:auto;
+		position: absolute;
+		z-index:-1;
+		top:0;
+		right:0;
+		left:0;
+		bottom:0;
+	}
+}
+
+// *************
+// Transition mixins
+// *************
+@mixin transitionShort{
+	-webkit-transition:all 0.1s ease-in-out;
+	   -moz-transition:all 0.1s ease-in-out;
+	        transition:all 0.1s ease-in-out;
+}
+@mixin transitionLong{
+	-webkit-transition:all 0.3s ease-in-out;
+	   -moz-transition:all 0.3s ease-in-out;
+	        transition:all 0.3s ease-in-out;
+}

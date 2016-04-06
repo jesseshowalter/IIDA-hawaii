@@ -1,0 +1,81 @@
+body {
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+h1 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: inherit;
+  font-size: 4.444444444444445em;
+  line-height: 1.0125em;
+  margin-top: 0.33749999999999997em;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: inherit;
+  font-size: 2.7222222222222223em;
+  line-height: 1.1020408163265305em;
+  margin-top: 0.5510204081632653em;
+  margin-bottom: 0.5510204081632653em;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: inherit;
+  font-size: 1.6666666666666667em;
+  line-height: 1.7999999999999998em;
+  margin-top: 0.8999999999999999em;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: inherit;
+  font-weight: 400;
+  font-style: inherit;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+h5 {
+  font-family: inherit;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.5em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+a {
+  color: #268ED9;
+}

@@ -1,0 +1,22 @@
+@import 'reset';
+@import 'normalize';
+
+// -------------------------------
+// Global Highlight Styles
+// -------------------------------
+::selection 	{ background: lighten($primary-color, 10%); color: white; } /* Safari */
+::-moz-selection { background:lighten($primary-color, 10%);  color: white; } /* Firefox */
+
+// -------------------------------
+// Global Link Styles
+// -------------------------------
+a:link, a:visited, a:active{
+	position: relative;
+	text-decoration: underline;
+	color: $primary-color;
+	@include transitionShort;
+}
+a:hover, a:focus{
+	text-decoration: underline;
+	color:darken($primary-color, 20%);
+}

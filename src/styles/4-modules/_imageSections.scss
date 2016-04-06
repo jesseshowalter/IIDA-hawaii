@@ -1,0 +1,38 @@
+@mixin imageSection{
+  background-size: cover;
+  background-attachment: fixed;
+  height:300px;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+	@include align-items(center);
+  color:white;
+  text-shadow: 1px 1px 0 #a2945b;
+  border-top:1.5px solid #a2945b;
+  border-bottom:1.5px solid #a2945b;
+  text-align: center;
+
+  @include media($tablet) {
+    height:200px;
+    font-size:0.8em;
+  }
+  @include media($mobile) {
+    height:150px;
+  }
+}
+
+#bioPhotoSection{
+  background: url("../images/photosection-authentic.jpg") no-repeat 0 -1750px;
+  @include imageSection;
+}
+
+#dealersPhotoSection{
+  background: url("../images/photosection-field.jpg") no-repeat 0 -1750px;
+  @include imageSection;
+}
+
+// #dealersPhotoSection{
+//   background: url("../images/photosection-field.jpg") no-repeat 0 -1500px;
+//   max-height:500px !important;
+//   @include imageSection;
+// }
