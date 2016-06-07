@@ -1,90 +1,272 @@
-nav{
-	background:transparent;
-	position: fixed;
-	z-index: 10;
-	padding:0px 40px;
-	width:100%;
-	margin-top:20px;
-	@include transitionLong;
+#navigation{
+  height:135px;
+  padding:0;
+  margin:0;
+  background: url("../images/nav-banner.jpg") 0 0;
+  background-size: cover;
+  display: flex;
+  @include media($tablet) {
+    height:55px;
+  }
 
-	@include media($large) {
-		padding:0 10px;
-		margin-top:0;
-	}
-	@include media($mobile) {
-		padding:0;
-	}
+  .nav-wrapper{
+    align-self: flex-end;
+    width:100%;
+    background: rgba(255, 255, 255, 0.3);
 
-	#logo{
-		display: inline-flex;
-		height:auto;
-		width:136px;
-		height:50px;
-		background: url("../images/logo-white.svg") no-repeat;
-		background-size: cover;
-		text-indent: -9999px;
-		margin:10px;
-	}
+    ul{
+      @include media($tablet) {
+        display:none;
+      }
+      margin:0;
+      padding:0;
+      float:right;
+      margin-right:40px;
+    }
 
-	ul{
-		display: inline-flex;
-    float: right;
-		margin:0;
+    ul > li {
+      display:inline-block;
+      // background:red;
+      cursor: pointer;
+      margin:0px 0px;
+      padding: 5px 20px;
+      position: relative;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        &:hover{background:white;}
+      a{
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
 
-		li{
-			a{
-				color:white !important;
-				text-decoration: none !important;
-				padding:20px 20px;
-				display: table;
-				font-weight: 300;
-				text-transform: uppercase;
-				text-shadow: rgba(0, 0, 0, 0.7);
-				border:1px solid transparent;
-
-			}
-			a:hover{
-				text-decoration: underline;
-				//background:rgba(0, 0, 0, 0.1);
-				border:1px solid white;
-			}
-		}
-	}
+  }
+  // -------------------------------
+  // Dropdown Navigation Styles
+  // -------------------------------
+  /*
+  ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    min-width: 300px;
+    width: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+  }
+  ul li ul li{padding:0;}
+  ul li ul li a {
+    background: white;
+    display: block;
+    color: $primary-color !important;
+    padding:0px 40px;
+  }
+  ul li ul li a:hover { background: #a5e7f2 ; color: red; }
+  ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  */
 }
 
-.visable{
-	background:rgba(0, 0, 0, 0.5);
-	margin-top:0px;
-	@include transitionLong;
 
-	a:hover{
-		border:1px solid transparent;
-		background:rgba(0, 0, 0, 0.2);
-	}
+
+
+// -------------------------------
+// Responsive Navigation Styles
+// -------------------------------
+
+$color-background: #F5F5F5;
+$color-main: #91ce54;
+$color-active: #FFF;
+$color-link: #FFF;
+
+$button-height: 27px;
+$button-width: 30px;
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  margin:  0 auto;
+
 }
 
-a.mobile-nav-button{
-	display:none;
-	background: url("../images/icon-menu.svg") no-repeat left;
-	padding:0px 0px 10px 35px;
-	color:white;
-	margin-top:10px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-indent: -9999px;
+
+.button_container {
+  display:none;
+  position: fixed;
+  background: #81857b;
+  padding:3px;
+  top: 13px;
+  right: 4%;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+  border-radius: 3px;
+  @include media($tablet) {
+    display: block;
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.active {
+    .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: $color-active;
+      top:2px;
+    }
+    .middle {
+      opacity: 0;
+      background: $color-active;
+    }
+
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: $color-active;
+      top:23px;
+    }
+  }
+
+  span {
+    background: white;
+    border: none;
+    height: 2px;
+    width: 85%;
+    position: absolute;
+    margin:0 auto;
+    top: 6px;
+    left: 2.5px;
+    transition:  all .35s ease;
+    cursor: pointer;
+    border-radius: 1px;
+
+    &:nth-of-type(2) {
+      top: 13px;
+    }
+
+    &:nth-of-type(3) {
+      top: 20px;
+    }
+  }
 }
 
-// ----------------------------------
-// Responsive Navigation Solution
-// ----------------------------------
-@include media($large) {
-	#navigation ul{
-		display:none;
-	}
+.overlay {
+  position: fixed;
+  background: $color-main;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
 
-	a.mobile-nav-button{
-		display:block;
-		float: right;
-	}
+  &.open {
+    opacity: .95;
+    visibility: visible;
+    height: 100%;
+    z-index: 1;
+
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    // font-size: 50px;
+    // font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    // list-style: none;
+    // padding: 0;
+    // margin: 0 auto;
+    // display: inline-block;
+    // position: relative;
+    // height: 100%;
+
+    li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+
+      a {
+        display: block;
+        position: relative;
+        color: $color-link;
+        text-decoration: none;
+        overflow: hidden;
+        padding:20px;
+
+        &:hover:after,
+         &:focus:after,
+         &:active:after {
+           width: 100%;
+         }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-link;
+          transition: .35s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }

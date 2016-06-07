@@ -1,0 +1,36 @@
+.infoBlock{
+  border-top:1px solid rgba(255, 255, 255, 0.2);
+  border-bottom:6px solid rgba(255, 255, 255, 0.2);
+  color:white;
+
+  h3{
+    margin:0 0 20px;
+    line-height: initial;
+  }
+
+  .wrapper{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+       -moz-column-count: 3; /* Firefox */
+            column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+       -moz-column-gap: 40px; /* Firefox */
+            column-gap: 40px;
+
+    @include media($tablet) {
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+         -moz-column-count: 1; /* Firefox */
+              column-count: 1;
+    }
+  }
+}
+
+#infoBlockBio{ background:#70abc1; }
+#infoBlockEvent{ background:#9abb5b; }
+#infoBlockBoard{ background:#8d4020; }
+#infoBlockMembership{ background:#f06630; }
+
+@include media($tablet) {
+  .truncate {
+    display:none;
+  }
+}

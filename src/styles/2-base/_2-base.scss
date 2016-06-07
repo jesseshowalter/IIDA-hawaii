@@ -1,6 +1,10 @@
 @import 'reset';
 @import 'normalize';
 
+body{
+	background:#fff;
+}
+
 // -------------------------------
 // Global Highlight Styles
 // -------------------------------
@@ -18,5 +22,26 @@ a:link, a:visited, a:active{
 }
 a:hover, a:focus{
 	text-decoration: underline;
-	color:darken($primary-color, 20%);
+	color:darken($primary-color, 30%);
+}
+.btn{
+	padding:10px 40px;
+	display: inline-block;
+	background: transparent;
+	border-radius: 4px;
+	border:2px solid white;
+	color:white !important;
+	text-decoration: none !important;
+	text-shadow: 0 1px 0 rgba($primary-color, 0.5);
+	line-height: initial;
+
+	&:hover{
+		background: rgba( white, 0.8);
+		color: $primary-color !important;
+		text-shadow: none;
+	}
+}
+
+.remodal{
+	color: $accent-color;
 }

@@ -1,8 +1,10 @@
 // Color Variables
-$primary-color: #da9419; // orange
-$secondary-color: #78736d; // Tan Brown
+$primary-color: #555555; // brown
+$accent-color: #94cb5a; // green
 
 // Responsive Breakpoint Variables
 $mobile: new-breakpoint(max-width 400px 4);
 $tablet: new-breakpoint(max-width 700px 4);
 $large: new-breakpoint(max-width 900px 4);
+
+$padding-standard: 40px;

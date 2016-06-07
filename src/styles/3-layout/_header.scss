@@ -1,52 +1,20 @@
 header{
-	background-repeat: no-repeat;
-	background-size: cover;
-  @include display(flex);
-  @include flex-direction(row);
-  @include justify-content(center);
-	@include align-items(center);
-	position: relative;
-	color:white;
+  border-bottom: 1px solid darken(#d7e2d1, 6%);
+  #logo{
+    background:white url("../images/logo.jpg") no-repeat;
+    background-size: contain;
+    height:135px;
+    width:300px;
+    padding:10px 0;
+    float:left;
+    @include media($tablet) {
+      height:55px;
+      width:110px;
+    }
 
-	article{
-		text-align: center;
-		max-width: 700px;
-	}
-
-	h1{
-		font-size:4em;
-		@include media($tablet) {
-				font-size: 3.4em;
-		}
-		@include media($mobile) {
-				font-size: 2.4em;
-		}
-	}
-
-	&#interior{
-		@include background-image(url("../images/hero.jpg"));
-	}
-}
-
-@mixin dark-overlay{
-  &:after{
-    content: "";
-    height: auto;
-    position: absolute;
-    z-index: -1;  // Take note of this negative z-index and compare to each article's positive z-index. This helps your content to show up over the overlay.
-    top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-	}
-}
-.full-overlay{
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  background-size: cover;
-  @include dark-overlay;
-}
-.full-overlay:after{
-	background:rgba(black, 0.35);
+    img{
+      width:100%;
+      height:auto;
+    }
+  }
 }

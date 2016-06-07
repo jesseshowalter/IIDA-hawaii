@@ -14,7 +14,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 <body>
-
 	<!-- The Contact Modal -->
 	<div class="remodal" data-remodal-id="contact">
 	  <button data-remodal-action="close" class="remodal-close"></button>
@@ -32,128 +31,219 @@
 
 	<div class="remodal-bg">
 
-		<nav id="navigation">
-			<a id="logo" href="index.html">Na Leo</a>
-			<ul>
-				<li><a href="#productsDisplay">About</a></li>
-				<li><a href="#bioPhotoSection">Membership</a></li>
-				<li><a href="#dealersPhotoSection">Events</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-			<a href="#" id="trigger-overlay" type="button" class="mobile-nav-button">Menu</a>
-		</nav>
-
-		<!-- This is a seperate nav for the overlay responsive   -->
-		<div class="overlay overlay-hugeinc">
-			<button type="button" class="overlay-close">Close</button>
-			<nav id="navigation-repeat">
-				<ul>
-					<li><a href="#productsDisplay">Ukuleles</a></li>
-					<li><a href="#bioPhotoSection">Our Story</a></li>
-					<li><a href="#dealersPhotoSection">Info</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<div class="button_container" id="toggle">
+		  <span class="top"></span>
+		  <span class="middle"></span>
+		  <span class="bottom"></span>
 		</div>
 
-		<header id="home">
-			<div class="banner">
-				<ul>
-					<li class="full-overlay" style="background-image:url('images/iida-hero.jpg');">
-						<div class="bannerWrap">
-							<h1>Authentic</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, nisi modi, sequi rerum molestiae totam pariatur quisquam corrupti tenetur dolor, odit est excepturi fugit maiores omnis quod quia et!</p>
-							<!-- <a href="#" class="btn">Learn More</a> -->
-						</div>
-					</li>
+		<div class="overlay" id="overlay">
+		  <nav class="overlay-menu">
+		    <ul>
+		      <li><a href="board.html">About</a></li>
+		      <li><a href="membership.html">Membership</a></li>
+		      <li><a href="events.html">Events</a></li>
+		    </ul>
+		  </nav>
+		</div>
 
-					<li class="full-overlay" style="background-image:url('images/iida-3.jpg');">
-						<div class="bannerWrap">
-							<h1>Pure Hawaii</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, nisi modi. psum dolor sit amet, consectetur adipisicing elit. Similique deleniti, nisi modi, sequi.</p>
-							<!-- <a href="#" class="btn">Learn More</a> -->
-						</div>
-					</li>
-
-					<li class="full-overlay" style="background-image:url('images/iida-4.jpg');">
-						<div class="bannerWrap">
-							<h1>Na Leo</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, nisi modi, sequi rerum molestiae totam pariatur quisquam corrupti tenetur dolor, odit est excepturi fugit maiores omnis quod quia et!</p>
-							<!-- <a href="#" class="btn">Learn More</a> -->
-						</div>
-					</li>
-				</ul>
-			</div>
+		<header>
+			<a id="logo" href="index.html"></a>
+			<nav id="navigation" role="navigation">
+				<div class="nav-wrapper">
+					<span class="entypo-menu" id="toggle-menu"></span>
+					<ul>
+						<li>
+							<a href="board.html">About</a>
+							<!--
+							<ul>
+								<li><a href="#">New Link</a></li>
+								<li><a href="#">New Link</a></li>
+								<li><a href="#">New Link</a></li>
+							</ul>
+							-->
+						</li>
+						<li><a href="membership.html">Membership</a></li>
+						<li><a href="events.html">Events</a></li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 
-		<section id="productsDisplay">
-			<div class="container">
-				<h3>Ukulele's</h3>
+		<section id="homeBanner" class="banner">
+			<div class="title-banner">
+				<h3>Aloha</h3>
+				<p>Welcome to the new IIDA Hawaii Pacific chapter.</p>
+			</div>
+		</section>
+
+		<section id="eventDisplay">
+			<div class="wrapper">
+				<h3>Local Events</h3>
 				<ul>
-					<li data-remodal-target="1000">
-						<img src="images/ukulele.png" alt="" />
-						<p>1000 Series</p>
+					<li>
+						<figure class="event-banner announcment">
+							<img src="images/event9.jpg" alt="">
+							<a href="">
+								<figcaption>
+					    		<h2>The Launch</h2>
+									<h4>10/24/2016</h4>
+									<h4>@Blasidale Arena</h4>
+								</figcaption>
+							</a>
+						</figure>
+						<p>Event Name, Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
 					</li>
-					<li data-remodal-target="2000">
-						<img src="images/ukulele.png" alt="" />
-						<p>2000 Series</p>
+					<li>
+						<figure class="event-banner announcment">
+							<img src="images/event10.jpg" alt="">
+							<a href="">
+								<figcaption>
+					    		<h2>Show &amp; Tell</h2>
+									<h4>10/24/2016</h4>
+									<h4>@IIDA Office</h4>
+								</figcaption>
+							</a>
+						</figure>
+						<p>Event Name, Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
 					</li>
-					<li data-remodal-target="3000">
-						<img src="images/ukulele.png" alt="" />
-						<p>3000 Series</p>
+					<li>
+						<figure class="event-banner announcment">
+							<img src="images/event11.jpg" alt="">
+							<a href="">
+								<figcaption>
+					    		<h2>IIDA Rally</h2>
+									<h4>10/24/2016</h4>
+									<h4>@Country Cafe</h4>
+								</figcaption>
+							</a>
+						</figure>
+						<p>Event Name, Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
 					</li>
+					<li>
+						<figure class="event-banner announcment">
+							<img src="images/event4.jpg" alt="">
+							<a href="">
+								<figcaption>
+									<h2>The Launch</h2>
+									<h4>10/24/2016</h4>
+									<h4>@Blasidale Arena</h4>
+								</figcaption>
+							</a>
+						</figure>
+						<p>Event Name, Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
+					</li>
+					<li>
+						<figure class="event-banner announcment">
+							<img src="images/event1.jpg" alt="">
+							<a href="">
+								<figcaption>
+									<h2>The Launch</h2>
+									<h4>10/24/2016</h4>
+									<h4>@Blasidale Arena</h4>
+								</figcaption>
+							</a>
+						</figure>
+						<p>Event Name, Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
+					</li>
+					<li>
+						<figure class="event-banner announcment">
+							<img src="images/event8.jpg" alt="">
+							<a href="">
+								<figcaption>
+									<h2>The Launch</h2>
+									<h4>10/24/2016</h4>
+									<h4>@Blasidale Arena</h4>
+								</figcaption>
+							</a>
+						</figure>
+						<p>Event Name, Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
+					</li>
+
+					<!-- <li>
+						<div class="event-banner">
+							<img src="images/event5.jpg" alt="">
+						</div>
+						<p>Event Name and information. Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
+					</li>
+					<li>
+						<div class="event-banner">
+							<img src="images/event6.jpg" alt="">
+						</div>
+						<p>Event Name and information. Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
+					</li>
+					<li>
+						<div class="event-banner">
+							<img src="images/event2.jpg" alt="">
+						</div>
+						<p>Event Name and information. Time, Date, Place</p>
+						<a class="reserve btn" href="#">Reserve Now</a>
+					</li> -->
 				</ul>
 			</div>
 		</section>
 
-		<section id="bioPhotoSection" data-stellar-background-ratio="0.3">
-			<h2>Our Story</h2>
-		</section>
-
-		<section id="bio">
-			<img src="images/logo-black.svg" alt="">
-			<article>
-				<h3>Authentic Hawaiian Sound</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quibusdam quisquam ullam alias vitae accusantium molestiae, vero consequatur nulla repudiandae. Nulla debitis, temporibus doloremque vero laboriosam. Enim sint omnis assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quibusdam  <a href="#">alias vitae</a> accusantium molestiae, vero consequatur nulla repudiandae. Nulla debitis, temporibus doloremque vero laboriosam. Enim sint omnis assumenda.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quibusdam quisquam ullam alias vitae accusantium molestiae, vero consequatur nulla repudiandae. Nulla debitis, temporibus doloremque vero laboriosam. Enim sint omnis assumenda.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quibusdam quisquam ullam alias vitae accusantium <a href=""> molestiae, vero </a>consequatur nulla repudiandae. Nulla debitis, temporibus doloremque vero laboriosam. Enim sint omnis assumenda.</p>
-			</article>
-		</section>
-
-		<section id="dealersPhotoSection" class="imageSection" data-stellar-background-ratio="0.3">
-			<h2>The Heavenly Sound</h2>
-		</section>
-
-		<!-- <section id="dealers">
-			<div id="dealersPhotoSection" class="imageSection" data-stellar-background-ratio="0.3">
-				<h2>Find a Dealer</h2>
+		<section id="bioImageSection" data-stellar-background-ratio="0.5">
+			<div class="title-banner">
+				<h3>About</h3>
+				<p>IIDA Hawaii Pacific Chapter</p>
 			</div>
-			<aside id="map">
-				<div class="google-maps">
-					<iframe src="http://mapbuildr.com/frame/2mjhfm" frameborder="0" height="200" width="450"></iframe>
+		</section>
+
+		<section class="infoBlock" id="infoBlockBio">
+			<div class="wrapper">
+				<h3>IIDA Hawaii Pacific Chapter</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam animi officiis alias ex repudiandae aliquam hic assumenda sed qui numquam a magni excepturi veritatis minima, quam non iste expedita, deserunt!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam animi officiis alias ex repudiandae aliquam hic assumenda sed qui numquam a magni excepturi veritatis minima, quam non iste expedita, deserunt!</p>
+				<div class="truncate">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam animi officiis alias ex repudiandae aliquam hic assumenda sed qui numquam a magni excepturi veritatis minima, quam non iste expedita, deserunt!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam animi officiis alias ex repudiandae aliquam hic assumenda sed qui numquam a magni excepturi veritatis minima, quam non iste expedita, deserunt!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam explicabo deserunt asperiores quod distinctio? Nobis, magni. Vel nemo earum reprehenderit magni neque, nam. Eveniet expedita itaque architecto eligendi suscipit voluptatibus.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo facilis aliquid voluptates ullam, esse provident doloribus recusandae, necessitatibus. Aliquid laboriosam eligendi fugit est, blanditiis officiis expedita nesciunt voluptatem doloribus modi.</p>
 				</div>
-			</aside>
-		</section> -->
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</section>
+
+		<section id="connect" class="">
+			<div class="wrapper">
+				<div id="newsletter">
+					<h3>Connect with us:</h3>
+					<input type="text" name="email" placeholder="Enter Email">
+					<a href="#" class="btn connectBtn">Go</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore ullam nulla mollitia incidunt animi natus doloremque repellat minima adipisci.</p>
+				</div>
+				<aside id="membership">
+					<h3>become a member, part of the ohana</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad odio sed facere unde reiciendis temporibus corporis, sit ab in expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="#" class="btn connectBtn">Go</a>
+				</aside>
+			</div>
+		</section>
 
 		<footer id="footer">
-			<img src="images/logo-grey.svg" alt="">
-			<div id="footer-links">
-				<ul id="site-links">
-					<li><a href="#productsDisplay">Ukuleles</a></li>
-					<li><a href="#bioPhotoSection">Our Story</a></li>
-					<li><a href="#dealersPhotoSection">Info</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-				<ul id="social">
-					<li><a id="facebook" href="https://www.facebook.com/LeolaniUkulele/" target="_blank"><img src="images/social-facebook.svg" alt="Facebook"></a></li>
-					<li><a id="twitter" href="https://twitter.com/leolaniukulele" target="_blank"><img src="images/social-twitter.svg" alt="Twitter"></a></li>
-					<li><a id="youtube" href="https://www.youtube.com/user/LeolaniUkulele" target="_blank"><img src="images/social-youtube.svg" alt="YouTube"></a></li>
-				</ul>
+			<div class="wrapper">
+				<div id="footer-links">
+					<ul id="site-links">
+						<li><a href=""><img class="footer-logo" src="images/IIDA-HPC-logo.svg" alt=""></a></li>
+						<li><a href="#productsDisplay">Home</a></li>
+						<li><a href="#bioPhotoSection">About US</a></li>
+						<li><a href="#dealersPhotoSection">Events</a></li>
+						<li><a href="#contact">Membership</a></li>
+					</ul>
+				</div>
+				<p class="copywright"><a href="">© IIDA Hawaii Pacific Chapter 2016</a>|<a href="">Privacy Policy</a>|<a href="">Made X Maker</a></p>
+			</div>
 		</footer>
 
-		<section id="copyright">
-			<p>&copy; 2016 Na Leo Inc.<span></span> Crafted by Made X Maker</p>
-		</section>
 
 	</div> <!-- end remodal-bg -->
 </body>

@@ -1,0 +1,120 @@
+#connect{
+  margin:10px 0;
+  overflow:auto;
+  background:#391717;
+  color: white;
+  background:#391717 url("../images/connectbg.jpg") no-repeat 0 0;
+  background-size: 49.5% 100%;
+
+  h3{
+    font-size:1.2em;
+  }
+
+  @include media($tablet) {
+    background:#391717 url("../images/connectbg.jpg") no-repeat 0 0;
+    background-size: 100% 49.5%;
+  }
+}
+
+#newsletter{
+  @include span-columns(6 of 12);
+  padding-right: 40px;
+
+  @include media($tablet) {
+    @include span-columns(12 of 12);
+    padding:0 0 40px 0;
+  }
+}
+
+#membership{
+  @include span-columns(6 of 12);
+  padding-left: 40px;
+
+  @include media($tablet) {
+    @include span-columns(12 of 12);
+    padding:0 0 0 0;
+  }
+
+  h3{
+    line-height: 1.6em;
+    margin-bottom: 10px;
+  }
+  p{
+    float:left;
+    width:80%;
+    margin-right:5%;
+    @include media($tablet) {
+      width:100%;
+    }
+  }
+  .btn{
+    float:left;
+    display: inline;
+    background: white;
+    color: #240c0c !important;
+    text-shadow: none;
+
+    &:hover{
+      background:#240c0c;
+      color:white !important;
+    }
+
+  }
+}
+
+.connectBtn{
+  background:#240c0c;
+  border:none;border-radius: 0;
+  padding:20px;
+  border: solid 1px #200a09;
+  text-transform: uppercase;
+  &:hover{
+    background:white;
+  }
+}
+
+#connect input[type="text"] {
+  margin:10px 0;
+  padding: 20px 20px;
+  border: solid 1px #200a09;
+  transition: box-shadow 0.3s, border 0.3s;
+  color:white;
+  box-shadow: none;
+  border-radius: none;
+  background:#240c0c;
+  width:80%;
+  @include media($tablet) {
+    width:70%;
+  }
+}
+#connect input[type="text"]:focus,
+#connect input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 0.9em;
+}

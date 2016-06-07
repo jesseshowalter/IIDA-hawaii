@@ -1,0 +1,34 @@
+section.banner{
+
+  background-size: cover !important;
+  background-position: 0 50% !important;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(black, 0.3);
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  height:300px;
+
+  @include media($tablet) {
+    height:200px;
+  }
+}
+
+#homeBanner{
+  background:url("../images/iida-hero-home.jpg") no-repeat;
+  height:520px;
+  @include media($tablet) {
+    height:400px;
+  }
+  @include media($mobile) {
+    height:300px;
+  }
+}
+
+#eventBanner{ background:url("../images/iida-hero-events.jpg")no-repeat;}
+#boardBanner{ background:url("../images/iida-hero-board.jpg") no-repeat;}
+#aboutBanner{ background:url("../images/iida-hero-about.jpg") no-repeat;}
+#membershipBanner{background:url("../images/iida-hero-membership.jpg") no-repeat;}
