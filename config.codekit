@@ -2286,6 +2286,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/src\/styles\/3-layout\/_mobileNav.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 1,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/styles\/3-layout\/_mobileNav.scss",
+		"outputAbbreviatedPath": "\/build\/styles\/_mobileNav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/src\/styles\/3-layout\/_navigation.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 1,
