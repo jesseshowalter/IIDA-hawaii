@@ -63,6 +63,7 @@ nav li a {
 	color: #fff;
 	padding: 12px 10px;
 	display: block;
+  text-transform: uppercase;
 }
 // nav li a:hover {color: #000; background:white;}
 // nav ul ul:hover + a {
@@ -181,6 +182,7 @@ div.slide {
 }
 nav ul {
 	height: 100%;
+  width: 100%;
 	overflow-y: auto;
 }
 nav li {
@@ -195,7 +197,7 @@ nav ul li ul li{
 	border:none !important;
 }
 nav li a {
-	padding: 22px 25px;
+	padding: 14px 25px;
 	letter-spacing: 3px;
 	font-size: 14px;
 	text-decoration: none !important;
