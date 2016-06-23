@@ -94,30 +94,4 @@ $(document).ready(function(){
 
 });
 
-// $(function() {
-// 
-//   function dropOpen() {
-//       $('ul').removeClass('dropClose').addClass('dropOpen');
-//   }
-//
-//   function dropClose() {
-//       $('ul').removeClass('dropOpen').addClass('dropClose');
-//   }
-//
-//   $('li.dropDownMobile').on(clickevent, function(event) {
-//       event.stopPropagation();
-//       event.preventDefault();
-//       if (ul.hasClass('dropOpen')) {
-//           dropClose();
-//       } else {
-//           dropOpen();
-//       }
-//   });
-//   li.click(function() {
-//       if (ul.hasClass('dropOpen')) {
-//           dropClose();
-//       }
-//   });
-// });
-
 }); // end document.ready
