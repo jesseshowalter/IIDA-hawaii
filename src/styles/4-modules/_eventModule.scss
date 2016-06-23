@@ -53,9 +53,9 @@
   overflow: hidden;
   max-height: 300px;
     @include media($tablet) {
-    max-height:200px;}
+    max-height:200px !important;}
     @include media($mobile) {
-    max-height:150px;}
+    max-height:150px !important;}
   img{
     width:100%;
   }
@@ -110,6 +110,13 @@ figure.announcment h4 {
   font-weight: 400;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 650px) {
+  figure.announcment{
+    h2, h4{
+      font-size: 80%;
+    }
+  }
+}
 
 figure.announcment:after {
   background-color: #87c540;
@@ -128,6 +135,12 @@ figure.announcment:after {
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   opacity: 0;
+  @media only screen and (max-width: 650px) {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  }
 }
 .boardMemberList figure.announcment:after{
   display:none !important;
