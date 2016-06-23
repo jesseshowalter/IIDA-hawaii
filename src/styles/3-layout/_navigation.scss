@@ -217,13 +217,13 @@ nav li a:hover {
 .header-section {margin-top: 60px;}
 
   nav li:hover ul{
-    display:block;
+    //display:block;
   }
 
 nav li ul{
   position: relative;
   border:none;
-  display: block;
+  //display: block;
   width: 100%;
   text-align: left;
   opacity: 1;
@@ -396,3 +396,11 @@ nav ul li ul li{
   }
 
 }
+
+
+  // ul.dropOpen{
+  //   display:block !important;
+  // }
+  // ul.dropClose{
+  //   display:none !important;
+  // }
