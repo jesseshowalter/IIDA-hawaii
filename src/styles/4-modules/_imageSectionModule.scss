@@ -47,6 +47,16 @@
   }
 }
 
+#partnerBanner{
+  @include imageSection;
+  .title-banner{
+    background: -moz-linear-gradient(left,  rgba(236, 41, 92, 0.80) 0%, rgba(236, 41, 92, 0.78) 53%, rgba(221,221,221,0) 90%);
+    background: -webkit-linear-gradient(left,  rgba(236, 41, 92, 0.80) 0%,rgba(236, 41, 92, 0.78) 53%,rgba(221,221,221,0) 90%);
+    background: linear-gradient(to right,  rgba(236, 41, 92, 0.80) 0%,rgba(236, 41, 92, 0.78) 53%,rgba(221,221,221,0) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92f99bf', endColorstr='#00dddddd',GradientType=1 );
+  }
+}
+
 .title-banner{
   text-transform: uppercase;
   display: flex;

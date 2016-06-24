@@ -1,0 +1,46 @@
+#partnerGrid{
+
+}
+
+#partnerColumnLeft{
+  background: white;
+  width:65%;
+  float:left;
+  header{
+    color:white;
+    background:rgb(234, 244, 246);
+
+    h4{
+      padding:5px 10px;
+      background:rgb(53, 144, 171);
+      width:50%;
+      margin:0;
+    }
+  }
+  img{
+    max-width: 150px;
+  }
+}
+
+#partnerColumnRight{
+  background: rgb(237, 243, 230);
+  width:35%;
+  float:left;
+  header{
+    color:white;
+    background:rgb(53, 144, 171);
+
+    h4{
+      padding:5px 10px;
+      margin:0;
+    }
+  }
+
+  img{
+    width:100%;
+  }
+}
+
+.gridContainer{
+  padding:20px;
+}

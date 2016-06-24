@@ -28,6 +28,7 @@
 #infoBlockEvent{ background:#9abb5b; }
 #infoBlockBoard{ background:#8d4020; }
 #infoBlockMembership{ background:#f06630; }
+#infoBlockPartner{ background:rgb(236, 41, 92); }
 
 @include media($tablet) {
   .truncate {

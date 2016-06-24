@@ -27,7 +27,7 @@
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
 }
-header{
+header.slide{
 	display:none;
 }
 nav.slide{
@@ -48,7 +48,7 @@ div#lowerNav{
 }
 nav ul{
 	overflow: auto;
-	margin:0;
+	margin:0 10px 0 0;
 	padding:0;
 	float:right;
 }
