@@ -136,7 +136,7 @@ ul.burger:hover{
 
 div#lowerNav{margin:0;}
 
-header {
+header.slide {
 	display: block;
 	height: 60px;
 	z-index: 2;
@@ -173,6 +173,7 @@ nav ul {
 	height: 100%;
   width: 100%;
 	overflow-y: auto;
+  margin:0;
 }
 nav li {
 	display: block;
