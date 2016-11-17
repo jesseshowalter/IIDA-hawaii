@@ -52,10 +52,10 @@
   border:1px solid #eaeaea;
   overflow: hidden;
   max-height: 300px;
-    @include media($tablet) {
-    max-height:200px !important;}
-    @include media($mobile) {
-    max-height:150px !important;}
+    // @include media($tablet) {
+    // max-height:200px !important;}
+    // @include media($mobile) {
+    // max-height:150px !important;}
   img{
     width:100%;
   }

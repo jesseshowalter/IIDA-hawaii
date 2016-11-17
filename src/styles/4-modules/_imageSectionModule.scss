@@ -8,7 +8,7 @@
   align-items: center;
 
   @include media($tablet) {
-    height:200px;
+    height:250px;
     font-size:0.8em;
   }
   @include media($mobile) {
@@ -17,43 +17,37 @@
 }
 
 #bioImageSection{
-  background: url("../images/iida-hero2.jpg") no-repeat 0 0;
+  background: url("../uploads/iida-hero2.jpg") no-repeat 0 0;
   @include imageSection;
   .title-banner{
-    background: -moz-linear-gradient(left,  rgba(47,153,191,0.80) 0%, rgba(47,153,191,0.78) 53%, rgba(221,221,221,0) 90%);
-    background: -webkit-linear-gradient(left,  rgba(47,153,191,0.80) 0%,rgba(47,153,191,0.78) 53%,rgba(221,221,221,0) 90%);
-    background: linear-gradient(to right,  rgba(47,153,191,0.80) 0%,rgba(47,153,191,0.78) 53%,rgba(221,221,221,0) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92f99bf', endColorstr='#00dddddd',GradientType=1 );
+    background: rgba(47,153,191,0.80)
   }
 }
 
-#boardBanner, #aboutBanner{
+#boardBanner{
   @include imageSection;
   .title-banner{
-    background: -moz-linear-gradient(left,  rgba(141,64,32,0.80) 0%, rgba(141,64,32,0.78) 53%, rgba(221,221,221,0) 90%);
-    background: -webkit-linear-gradient(left,  rgba(141,64,32,0.80) 0%,rgba(141,64,32,0.78) 53%,rgba(221,221,221,0) 90%);
-    background: linear-gradient(to right,  rgba(141,64,32,0.80) 0%,rgba(141,64,32,0.78) 53%,rgba(221,221,221,0) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92f99bf', endColorstr='#00dddddd',GradientType=1 );
+    background: rgba(141,64,32,0.80);
+  }
+}
+#aboutBanner{
+  @include imageSection;
+  .title-banner{
+    background: rgba(3,88,99,0.8);
   }
 }
 
 #membershipBanner{
   @include imageSection;
   .title-banner{
-    background: -moz-linear-gradient(left,  rgba(240, 102, 48,0.80) 0%, rgba(240, 102, 48,0.78) 53%, rgba(221,221,221,0) 90%);
-    background: -webkit-linear-gradient(left,  rgba(240, 102, 48,0.80) 0%,rgba(240, 102, 48,0.78) 53%,rgba(221,221,221,0) 90%);
-    background: linear-gradient(to right,  rgba(240, 102, 48,0.80) 0%,rgba(240, 102, 48,0.78) 53%,rgba(221,221,221,0) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92f99bf', endColorstr='#00dddddd',GradientType=1 );
+    background: rgba(240, 102, 48,0.80);
   }
 }
 
 #partnerBanner{
   @include imageSection;
   .title-banner{
-    background: -moz-linear-gradient(left,  rgba(236, 41, 92, 0.80) 0%, rgba(236, 41, 92, 0.78) 53%, rgba(221,221,221,0) 90%);
-    background: -webkit-linear-gradient(left,  rgba(236, 41, 92, 0.80) 0%,rgba(236, 41, 92, 0.78) 53%,rgba(221,221,221,0) 90%);
-    background: linear-gradient(to right,  rgba(236, 41, 92, 0.80) 0%,rgba(236, 41, 92, 0.78) 53%,rgba(221,221,221,0) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92f99bf', endColorstr='#00dddddd',GradientType=1 );
+    background: rgba(236, 41, 92, 0.8);
   }
 }
 
@@ -64,13 +58,8 @@
   justify-content: center;
   padding:0px 80px;
   max-height: 160px;
-  background: rgba(darken($accent-color, 30%), 0.6);
-  background: -moz-linear-gradient(left,  rgba(85,124,43,0.8) 0%, rgba(85,124,43,0.7) 53%, rgba(192,200,183,0) 90%, rgba(221,221,221,0) 100%);
-  background: -webkit-linear-gradient(left,  rgba(85,124,43,0.8) 0%,rgba(85,124,43,0.7) 53%,rgba(192,200,183,0) 90%,rgba(221,221,221,0) 100%);
-  background: linear-gradient(to right,  rgba(85,124,43,0.8) 0%,rgba(85,124,43,0.7) 53%,rgba(192,200,183,0) 90%,rgba(221,221,221,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc557c2b', endColorstr='#00dddddd',GradientType=1 );
+  background: rgba(darken($accent-color, 30%), 0.8);
   @include media($tablet) {
-    background:rgba(darken($accent-color, 30%), 0.6);
     display:block;
     padding: 10px 0px;
     width:100%;
@@ -86,7 +75,7 @@
     }
   }
   h3{
-    font-size: 8em;
+    font-size: 4.8em;
     margin:0;
     padding:0;
     @include media($tablet) {

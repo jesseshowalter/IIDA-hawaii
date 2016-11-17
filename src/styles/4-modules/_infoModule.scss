@@ -8,20 +8,20 @@
     line-height: initial;
   }
 
-  .wrapper{
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-       -moz-column-count: 3; /* Firefox */
-            column-count: 3;
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-       -moz-column-gap: 40px; /* Firefox */
-            column-gap: 40px;
-
-    @include media($tablet) {
-      -webkit-column-count: 1; /* Chrome, Safari, Opera */
-         -moz-column-count: 1; /* Firefox */
-              column-count: 1;
-    }
-  }
+  // .wrapper{
+  //   -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  //      -moz-column-count: 3; /* Firefox */
+  //           column-count: 3;
+  //   -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  //      -moz-column-gap: 40px; /* Firefox */
+  //           column-gap: 40px;
+  //
+  //   @include media($tablet) {
+  //     -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  //        -moz-column-count: 1; /* Firefox */
+  //             column-count: 1;
+  //   }
+  // }
 }
 
 #infoBlockBio{ background:#70abc1; }
