@@ -132,22 +132,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/build\/assets\/styles\/converted.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 1,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/assets\/styles\/converted.scss",
-		"outputAbbreviatedPath": "\/build\/styles\/converted.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/build\/assets\/styles\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
