@@ -13,6 +13,10 @@
 	@include media($mobile) {
 		padding:20px;
 	}
+
+	img{
+		width:100%;
+	}
 }
 
 .mainBody{
@@ -35,4 +39,30 @@
 		list-style-type: disc;
 		margin-left:25px;
 	}
+}
+
+.tg {
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	margin: 50px auto;
+	color: #333;
+}
+.tg th {
+	padding:10px;
+	border-style:
+	solid;border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+	background:#dee7d4;
+}
+.tg td{
+	padding:10px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+}
+.tg .tg-yw4l{
+	vertical-align:top
 }

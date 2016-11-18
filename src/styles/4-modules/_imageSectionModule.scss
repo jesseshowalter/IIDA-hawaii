@@ -12,7 +12,9 @@
     font-size:0.8em;
   }
   @include media($mobile) {
-    height:150px;
+    // height:150px;
+    height:auto;
+    padding:50px 0;
   }
 }
 
