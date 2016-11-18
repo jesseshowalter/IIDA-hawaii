@@ -95,6 +95,9 @@ nav li ul li{
     color: #67b1c5;
   }
 }
+nav ul li:hover > a {
+  background-color: white;
+}
 
 nav li:hover ul{
   display:inline-block;
