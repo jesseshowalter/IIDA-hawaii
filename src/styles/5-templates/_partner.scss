@@ -38,6 +38,11 @@
     width:100%;
   }
 
+  img{
+    width: 100% !important;
+    height: auto !important;
+  }
+
   header{
     color:white;
     background:rgb(53, 144, 171);
@@ -46,10 +51,6 @@
       padding:5px 10px;
       margin:0;
     }
-  }
-
-  img{
-    width:100% !important;
   }
 }
 
